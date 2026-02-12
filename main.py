@@ -120,7 +120,10 @@ if st.session_state.accepted:
     </div>
     """, unsafe_allow_html=True)
 
-    st.image("Pic1.jpg", caption="My favorite place ❤️", use_container_width=True)
+    col1, col2, col3 = st.columns([1,2,1])
+
+    with col2:
+        st.image("images/Pic1.jpeg", caption="My favorite place ❤️", width=500)
 
     st.markdown("""
     <div class='quote'>
@@ -173,6 +176,7 @@ else:
         st.markdown(f"<div class='comeback'>{no_responses[msg_index]}</div>", unsafe_allow_html=True)
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 

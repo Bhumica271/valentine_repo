@@ -86,7 +86,7 @@ st.markdown("""
 
 </style>
 """, unsafe_allow_html=True)
-st.image("background1.jpg", use_container_width=True)
+
 # Progressive quotes
 quotes = [
     "“Somewhere between hello and forever, I found my home in you.”",
@@ -165,13 +165,14 @@ else:
     with random_col:
         if st.button("No"):
             st.session_state.no_count += 1
-
+    st.image("background1.jpg", use_container_width=True)
     # Escalating NO message
     if st.session_state.no_count > 0:
         msg_index = min(st.session_state.no_count - 1, len(no_responses) - 1)
         st.markdown(f"<div class='comeback'>{no_responses[msg_index]}</div>", unsafe_allow_html=True)
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 

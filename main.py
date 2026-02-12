@@ -87,11 +87,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
-col1, col2, col3 = st.columns([1,2,1])
-
-with col2:
-    st.image("background1.jpeg", caption="Choose well! ❤️", width=500)
 # Progressive quotes
 quotes = [
     "“Somewhere between hello and forever, I found my home in you.”",
@@ -180,6 +175,7 @@ else:
         st.markdown(f"<div class='comeback'>{no_responses[msg_index]}</div>", unsafe_allow_html=True)
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 

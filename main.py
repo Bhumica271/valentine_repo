@@ -21,7 +21,7 @@ st.markdown("""
 
 /* Full background */
 [data-testid="stAppViewContainer"] {
-    background-image: url("background.avif");
+    background-image: url("background1.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -173,6 +173,7 @@ else:
         st.markdown(f"<div class='comeback'>{no_responses[msg_index]}</div>", unsafe_allow_html=True)
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 

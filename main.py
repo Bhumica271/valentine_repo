@@ -86,7 +86,7 @@ st.markdown("""
 
 </style>
 """, unsafe_allow_html=True)
-
+st.image("background1.jpg", use_container_width=True)
 # Progressive quotes
 quotes = [
     "“Somewhere between hello and forever, I found my home in you.”",
@@ -172,6 +172,7 @@ else:
         st.markdown(f"<div class='comeback'>{no_responses[msg_index]}</div>", unsafe_allow_html=True)
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
